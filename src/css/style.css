@@ -3,3 +3,77 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
+
+*{ 
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: #0b151b;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: auto;
+}
+header img{
+    display: block;
+    height: 50px;
+    margin: 15px auto;
+}
+
+/* main */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+section{
+    width: 50%;
+    min-width: 750px;
+    margin: 0 auto;
+    align-content: space-between;
+    
+}
+
+/*CARUSEL*/
+.carusel__item{
+    width: calc(50vw - 80px - 20px);
+}
+#roulete__img{
+    object-fit: contain;
+    width: 100%;
+}
+#arrow_left{
+    transform: rotate(90deg);
+    width: 40px;
+}
+#arrow_right{
+    transform: rotate(-90deg);
+    width: 40px;
+}
+.carusel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.point{
+    color: #d8b679;
+    font-size: 30px;
+}
+.dots__outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
